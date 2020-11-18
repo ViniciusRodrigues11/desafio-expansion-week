@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player'
-import { FiCheckCircle, FiVolumeX } from 'react-icons/fi'
+import { FiCheckCircle } from 'react-icons/fi'
 
 import './App.css';
 
