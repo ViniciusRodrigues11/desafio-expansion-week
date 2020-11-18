@@ -1,38 +1,250 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background: linear-gradient(180deg, #8e25be 0%, #9a20d3 100%);
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box-intro {
+  margin: 80px;
+  border-left: 1px solid #efefef6e;
+  padding: 50px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.first-content {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 128px;
+}
+
+.first-content div {
+  transform: translateX(-150px) translateY(-80px);
+}
+
+.first-content h1 {
+  font-weight: 500;
+  font-size: 48px;
+  letter-spacing: 8px;
+  margin-bottom: 4px;
+}
+
+.first-content p {
+  max-width: 450px;
+  letter-spacing: 4px;
+  font-size: 18px;
+}
+
+.first-content img {
+  max-width: 500px;
+  transform: translateX(150px);
+}
+
+.second-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 600px;
+  height: 450px;
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.336);
+  border-radius: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.second-content p {
+  max-width: 400px;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 0.02em;
+  color: #3F3D56;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.second-content img {
+  width: 30vw;
+  max-width: 600px;
+  transform: translateX(-100px);
+}
+
+.box-media {
+  margin-bottom: 50px;
+}
+
+.box-video video {
+  width: 100vw !important;
+  object-fit: cover;
+  border-top-right-radius: 150px;
+}
+
+.video-filter {
+  width: 100vw;
+  height: 45vh;
+  position: absolute;
+  background: #8f35b98a;
+  border-top-right-radius: 150px;
+  filter: drop-shadow(0px -20px 50px rgba(203, 203, 203, 0.466));
+}
+
+.box-steps {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  height: 550px;
+  border-bottom-left-radius: 150px;
+  background: #2F2E41;
+  box-shadow: 0px 20px 50px rgba(215, 215, 215, 0.25);
+}
+
+.box-steps img {
+  max-width: 500px;
+  width: 50vw;
+}
+
+.box-steps div {
+  display: flex;
+  flex-direction: column;
+  max-height: 180px;
+  color: #fff;
+}
+
+.box-steps div p {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.box-steps div svg {
+  margin-right: 20px;
+}
+
+.footer-infos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #efefef6e;
+  margin: 80px;
+  padding: 90px;
+}
+
+.footer-infos p {
+  max-width: 500px;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: justify;
+  line-height: 32px;
+  /* or 131% */
+  letter-spacing: 0.1em;
+  color: #F1F1F1;
+}
+
+.footer-infos img {
+  max-width: 550px;
+  width: 50vw;
+}
+
+@media screen and (max-width: 720px){
+  .second-content img {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+
+}
+
+@media screen and (max-width: 500px){
+ 
+  .card{
+    justify-content: end;
+    width: 100vw;
+    height: auto;
+    padding: 80px 20px;
   }
+
+  .card p{
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: justify;
+  }
+
+}
+
+
+
+@media screen and (max-width: 992px){
+  .box-intro {
+    margin: 2px;
+    border-left: none;
+    padding: 0;
+  }
+  .first-content{
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+  .first-content div {
+    transform: translateX(0) translateY(0);
+  }
+  .first-content img {
+    width: 80vw;
+    transform: translateX(0);
+    margin-bottom: 50px;
+  }
+
+  .first-content h1 {
+    font-size: 32px;
+  }
+
+  .first-content p {
+    letter-spacing: 2px;
+    font-size: 14px;
+  }
+  
+  .video-filter{
+    display: none;
+  }
+
+  .box-video{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-video video {
+    width: 70vw !important;
+    height: 70vw !important;
+    border-radius: 50%;
+  }
+  
+  .box-steps{
+    flex-wrap: wrap-reverse;
+    margin-top: 20vw;
+
+  }
+
+  .footer-infos{
+    flex-wrap: wrap;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    margin-top: 50px;
+
+  }
+  .footer-infos p{
+      margin-bottom: 40px;
+  }
+  
+
 }
