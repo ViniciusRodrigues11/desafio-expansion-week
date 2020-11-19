@@ -13,6 +13,7 @@ body {
 
 .box-intro {
   margin: 80px;
+  margin-bottom: 160px;
   border-left: 1px solid #efefef6e;
   padding: 50px;
 }
@@ -23,7 +24,9 @@ body {
   justify-content: center;
   align-items: center;
   color: #fff;
-  margin-bottom: 128px;
+  height: 100vh;
+  margin-right: 20px;
+  border-right: 1px dashed #efefef6e;
 }
 
 .first-content div {
@@ -86,7 +89,6 @@ body {
 .box-video video {
   width: 100vw !important;
   object-fit: cover;
-  border-top-right-radius: 150px;
 }
 
 .video-filter {
@@ -94,7 +96,6 @@ body {
   height: 45vh;
   position: absolute;
   background: #8f35b98a;
-  border-top-right-radius: 150px;
   filter: drop-shadow(0px -20px 50px rgba(203, 203, 203, 0.466));
 }
 
