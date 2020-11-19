@@ -9,7 +9,7 @@ import Creative01 from './assets/creative1.svg'
 import Creative02 from './assets/creative2.svg'
 import Creative03 from './assets/creative3.svg'
 import Creative04 from './assets/creative4.svg'
-import vid from './assets/vid.mp4'
+import vid from './assets/vidt.mp4'
 
 function App() {
   return (
@@ -19,17 +19,14 @@ function App() {
           <Fade>
             <img src={Creative01} alt="" />
           </Fade>
-
           <div>
-
             <h1>Criatividade</h1>
             <p>“Criatividade é a arte de conectar ideias.” Steve Jobs</p>
-
           </div>
         </div>
 
         <div className="second-content">
-          <Fade direction="left">
+          <Fade direction="down">
             <div className="card">
               <p>A criatividade, mais do que algo inato,
               pode ser construída por meio de conhecimentos
@@ -39,12 +36,8 @@ function App() {
              crise vivenciados pelas empresas.</p>
             </div>
           </Fade>
-          <Fade direction="right"><img src={Creative02} alt="" /></Fade>
-
-
-
+          <Fade direction="up"><img src={Creative02} alt="" /></Fade>
         </div>
-
       </div>
 
       <div className="box-media" >
@@ -52,7 +45,6 @@ function App() {
           <div className="box-video">
             <div className="video-filter"></div>
             <ReactPlayer
-
               url={vid}
               loop={true}
               muted={true}
@@ -66,17 +58,14 @@ function App() {
         </Fade>
         <div className="box-steps">
           <Fade direction="up"><img src={Creative03} alt="" /></Fade>
-
           <Fade>
-          <div>
-            <p><FiCheckCircle size={20} color="#fff" /> Mantenha a mente aberta</p>
-            <p><FiCheckCircle size={20} color="#fff" /> Exercite seu cérebro</p>
-            <p><FiCheckCircle size={20} color="#fff" /> Valorize suas ideias</p>
-          </div>
+            <div>
+              <p><FiCheckCircle size={20} color="#fff" /> Mantenha a mente aberta</p>
+              <p><FiCheckCircle size={20} color="#fff" /> Exercite seu cérebro</p>
+              <p><FiCheckCircle size={20} color="#fff" /> Valorize suas ideias</p>
+            </div>
           </Fade>
-
         </div>
-
 
         <div className="footer-infos">
           <Fade>
@@ -88,7 +77,6 @@ function App() {
             <img src={Creative04} alt="" />
           </Fade>
         </div>
-
       </div>
 
     </>
